@@ -26,14 +26,14 @@ export default function About() {
   };
 
   return (
-    <div className="h-xl w-screen flex items-center justify-center">
-      <div className="aboutcontent h-lg w-3/5 flex space-x-8">
-        <div className="leftSide h-full flex flex-col items-center justify-center space-y-8 w-1/2  ">
+    <div className="h-xl w-screen flex bg-gray-200 items-center justify-center ">
+      <div className="aboutcontent h-lg w-3/5 flex space-x-8 ">
+        <div className="leftSide h-full flex flex-col items-center justify-center space-y-8 xs:w-full sm:w-full md:w-1/2  ">
           <div className="companyName flex space-x-2 ">
-            <p className="text-lg pt-1 bg-blue0">Bienvenido a</p>
-            <p className="text-2xl text-blue-700">The Fix</p>
+            <p className="text-2xl pt-1 bg-blue0">Bienvenido a</p>
+            <p className="text-3xl text-blue-700 font-semibold">The Fix</p>
           </div>
-          <div className="companyDescription font-light text-sm ">
+          <div className="companyDescription font-light text-md  ">
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               Dignissimos ducimus quos dicta voluptates facilis ex ad nihil,
@@ -43,7 +43,7 @@ export default function About() {
             </p>
           </div>
         </div>
-        <div className="righSide  w-1/2  flex items-center justify-center">
+        <div className="righSide  flex items-center justify-center xs:w-0 sm:w-0 md:w-1/2 ">
           <div className="images h-md w-80  flex flex-col items-center space-y-2 ">
             <motion.div
               className="image1 h-half w-5/6 "
@@ -51,7 +51,7 @@ export default function About() {
               animate={animation}
               initial="hidden"
               variants={variants}
-              transition={{ duration: 1 }}
+              transition={{ duration: 1, delay: 0.3 }}
             >
               <img
                 className="h-xxs w-full object-cover rounded-xl shadow-2xl"
@@ -64,7 +64,7 @@ export default function About() {
               animate={animation}
               initial="hidden"
               variants={variants}
-              transition={{ duration: 1, delay: 0.5 }}
+              transition={{ duration: 1, delay: 0.8 }}
             >
               <img
                 className="h-xxs w-full object-cover rounded-xl shodow-2xl"
