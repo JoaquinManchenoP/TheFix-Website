@@ -4,6 +4,8 @@ module.exports = {
   theme: {
     height: {
       button: "38px",
+      half: "50%",
+      xxs: "150px",
       sm: "250px",
       md: "350px",
       lg: "450px",
