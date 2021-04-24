@@ -15,7 +15,10 @@ export default function Services() {
           </p>
         </div>
         <div className="serviceIcons h-sm w-full bg-green-400 flex justify-center space-x-16">
-          <ServiceCard />
+          <ServiceCard
+            serviceName="Reparaciones"
+            serviceDescription="The fix the arrgle todos los aparatod electronicos mi nepas"
+          />
           <ServiceCard />
           <ServiceCard />
         </div>
